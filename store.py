@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 from flask import Flask, jsonify, request
 import re, json, os
 
