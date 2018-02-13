@@ -17,6 +17,9 @@ Program listens on any IP address and port 8000.
 Permanent store is asset_store.json file. It would be created if doesn't
 exist or empty.
 
+Asset store implemented as dictionary.
+Keys used are 'name', 'type', 'class', 'details', 'diameter', 'radome', 'gain'.
+
 Adding data with POST (user admin in X-User header) - examples - running on localhost:
 
 curl -S -X POST -H "Content-Type: application/json" -H "X-User: admin" -d '{
