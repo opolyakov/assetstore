@@ -6,6 +6,7 @@ Prerequisites:
 For RHEL/CentOS run:
 
 sudo yum install -y python2-pip
+
 sudo pip install flask
 
 To start program run
@@ -16,7 +17,7 @@ Program listens on any IP address and port 8000.
 Permanent store is asset_store.json file. It would be created if doesn't
 exist or empty.
 
-Adding data with POST (user admin in X-User header) - examples :
+Adding data with POST (user admin in X-User header) - examples - running on localhost:
 
 curl -S -X POST -H "Content-Type: application/json" -H "X-User: admin" -d '{
 "SAT-AAF_576": { "class": "rapideye", "type": "satellite" }}
